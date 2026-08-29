@@ -1,10 +1,11 @@
 
-const skills = [
+const skillGroups = [
   {
-    category: "Frontend",
-    technologies: [
-      "HTML",
-      "CSS",
+    title: "Frontend",
+    description: "Building responsive and interactive user interfaces.",
+    skills: [
+      "HTML5",
+      "CSS3",
       "JavaScript",
       "React",
       "Next.js",
@@ -12,16 +13,34 @@ const skills = [
     ],
   },
   {
-    category: "Backend",
-    technologies: ["Node.js", "Express.js", "REST API"],
+    title: "Backend",
+    description: "Developing APIs and server-side applications.",
+    skills: [
+      "Node.js",
+      "Express.js",
+      "REST API",
+      "JWT Authentication",
+    ],
   },
   {
-    category: "Database",
-    technologies: ["MongoDB"],
+    title: "Database",
+    description: "Working with databases and application data.",
+    skills: [
+      "MongoDB",
+      "MongoDB Atlas",
+      "Mongoose",
+    ],
   },
   {
-    category: "Tools",
-    technologies: ["Git", "GitHub", "VS Code", "Vercel"],
+    title: "Tools & Others",
+    description: "Tools I use for development and project management.",
+    skills: [
+      "Git",
+      "GitHub",
+      "VS Code",
+      "npm",
+      "Vercel",
+    ],
   },
 ];
 
@@ -29,8 +48,9 @@ export default function Skills() {
   return (
     <section id="skills" className="bg-gray-50 px-6 py-24">
       <div className="mx-auto max-w-6xl">
-        {/* Section heading */}
-        <div className="mb-12 text-center">
+
+        {/* Section Heading */}
+        <div className="mx-auto mb-12 max-w-2xl text-center">
           <p className="mb-2 text-sm font-semibold uppercase tracking-wider text-gray-500">
             Skills
           </p>
@@ -39,37 +59,54 @@ export default function Skills() {
             Technologies I work with
           </h2>
 
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600">
-            Technologies and tools I'm currently using to build modern web
-            applications.
+          <p className="mt-4 text-lg leading-8 text-gray-600">
+            Technologies and tools I use to build modern, responsive and
+            full-stack web applications.
           </p>
         </div>
 
-        {/* Skills */}
-        <div className="grid gap-6 sm:grid-cols-2">
-          {skills.map((skill) => (
-            <div
-              key={skill.category}
-              className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm"
+        {/* Skill Groups */}
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {skillGroups.map((group) => (
+            <article
+              key={group.title}
+              className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg"
             >
-              <h3 className="mb-4 text-xl font-semibold text-gray-900">
-                {skill.category}
+              {/* Icon */}
+              <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-gray-900 text-xl text-white">
+                {group.title === "Frontend" && "⚛"}
+                {group.title === "Backend" && "⚙"}
+                {group.title === "Database" && "🗄"}
+                {group.title === "Tools & Others" && "🛠"}
+              </div>
+
+              {/* Title */}
+              <h3 className="text-xl font-semibold text-gray-900">
+                {group.title}
               </h3>
 
-              <div className="flex flex-wrap gap-3">
-                {skill.technologies.map((technology) => (
+              {/* Description */}
+              <p className="mt-2 text-sm leading-6 text-gray-500">
+                {group.description}
+              </p>
+
+              {/* Skills */}
+              <div className="mt-5 flex flex-wrap gap-2">
+                {group.skills.map((skill) => (
                   <span
-                    key={technology}
-                    className="rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700"
+                    key={skill}
+                    className="rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-700"
                   >
-                    {technology}
+                    {skill}
                   </span>
                 ))}
               </div>
-            </div>
+            </article>
           ))}
         </div>
+
       </div>
     </section>
   );
 }
+

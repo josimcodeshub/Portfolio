@@ -1,10 +1,11 @@
+
 const education = [
   {
-    title: "Learning & Development",
-    organization: "Self-Learning / Online Courses",
-    period: "Present",
+    title: "M.Sc. in Geography and Environment",
+    organization: "National University, Bangladesh",
+    period: "2021",
     description:
-      "Currently developing my skills in full-stack web development with a focus on JavaScript, React, Next.js, Node.js, Express.js and MongoDB.",
+      "Completed a Master of Science in Geography and Environment, developing analytical, research and problem-solving skills that complement my journey into software development.",
   },
 ];
 
@@ -12,9 +13,9 @@ const experience = [
   {
     title: "Junior Web Developer",
     organization: "Personal Projects",
-    period: "Present",
+    period: "present",
     description:
-      "Building real-world web applications to strengthen frontend, backend, database, authentication and API development skills.",
+      "Building real-world web applications using JavaScript, React, Next.js, Node.js, Express.js and MongoDB while developing practical skills in frontend, backend, database, authentication and API development.",
   },
 ];
 
@@ -23,19 +24,19 @@ export default function Experience() {
     <section id="experience" className="bg-gray-50 px-6 py-24">
       <div className="mx-auto max-w-5xl">
 
-        {/* Heading */}
+        {/* Section Heading */}
         <div className="mb-12 text-center">
           <p className="mb-2 text-sm font-semibold uppercase tracking-wider text-gray-500">
             Experience & Education
           </p>
 
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            My journey
+            My Journey
           </h2>
 
           <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600">
-            My learning journey and experience as I continue growing as a
-            developer.
+            My academic background and journey toward becoming a professional
+            full-stack web developer.
           </p>
         </div>
 
@@ -49,7 +50,7 @@ export default function Experience() {
             {experience.map((item) => (
               <article
                 key={item.title}
-                className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm"
+                className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition hover:shadow-md"
               >
                 <div className="flex flex-col justify-between gap-2 sm:flex-row">
                   <div>
@@ -85,7 +86,7 @@ export default function Experience() {
             {education.map((item) => (
               <article
                 key={item.title}
-                className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm"
+                className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition hover:shadow-md"
               >
                 <div className="flex flex-col justify-between gap-2 sm:flex-row">
                   <div>
@@ -115,3 +116,5 @@ export default function Experience() {
     </section>
   );
 }
+
+
