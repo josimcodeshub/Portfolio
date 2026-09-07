@@ -1,5 +1,8 @@
+import ThemeProvider from "./ThemeProvider";
+
 export default function About() {
   return (
+ 
     <section id="about" className="bg-gray-50 px-6 py-24">
       <div className="mx-auto max-w-6xl">
         {/* Section Header */}
@@ -110,6 +113,7 @@ export default function About() {
           </div>
         </div>
       </div>
-    </section>
+      </section>
+      
   );
 }

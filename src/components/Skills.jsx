@@ -31,7 +31,7 @@ const skillGroups = [
     skills: [
       "MongoDB",
       "MongoDB Atlas",
-      "Mongoose",
+      
     ],
   },
   {

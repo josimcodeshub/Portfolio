@@ -4,7 +4,7 @@ A modern and responsive personal portfolio website built with **Next.js** and **
 
 ## 🌐 Live Demo
 
-[Live Portfolio](YOUR_LIVE_WEBSITE_URL)
+[Live Portfolio](https://portfoliojosim.netlify.app)
 
 ## 📂 GitHub Repository
 
