@@ -38,7 +38,7 @@ export default function Hero() {
 
           {/* Role */}
           <h2 className="mt-5 text-2xl font-semibold text-gray-700 sm:text-3xl">
-            Junior MERN Stack Developer
+           Full Stack Developer
           </h2>
 
           {/* Description */}
@@ -135,7 +135,7 @@ export default function Hero() {
 
                 <div>
                   <p className="text-sm font-bold text-gray-900">
-                    MERN Stack
+                    Full Stack
                   </p>
 
                   <p className="text-xs text-gray-500">

@@ -10,7 +10,7 @@ const education = [
 
 const journey = [
   {
-    title: "Junior MERN Stack Developer",
+    title: "Full Stack Developer",
     organization: "Self-Learning & Personal Projects",
     period: "Present",
     description:

@@ -63,7 +63,7 @@ export default function Navbar() {
 
           {/* Resume Button */}
           <a
-            href="https://drive.google.com/uc?export=download&id=19R2KqNoWh8zYpPm35flxZVsM2dKp1Mni"
+            href="https://drive.google.com/file/d/1cizi_4wkOHMAcnMkyqHofe-8GmGhW6c4/view?usp=drive_link"
             className="rounded-md bg-emerald-500 px-4 py-2 text-sm font-medium text-neutral-950 transition duration-200 hover:bg-emerald-400"
           >
             Resume
@@ -107,7 +107,7 @@ export default function Navbar() {
 
             {/* Mobile Resume */}
             <a
-              href="https://drive.google.com/uc?export=download&id=19R2KqNoWh8zYpPm35flxZVsM2dKp1Mni"
+              href="https://drive.google.com/file/d/1cizi_4wkOHMAcnMkyqHofe-8GmGhW6c4/view?usp=drive_link"
               onClick={() => setIsOpen(false)}
               className="mt-3 rounded-md bg-emerald-500 px-4 py-3 text-center text-sm font-medium text-neutral-950 transition hover:bg-emerald-400"
             >
